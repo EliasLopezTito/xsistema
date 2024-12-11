@@ -1,0 +1,138 @@
+.color_326299{
+    color:#326299;
+}
+
+.color_1d4064{
+    color:#1d4064;
+}
+
+.color_white {
+    color:white;
+}
+
+.color_black {
+    color:black;
+}
+
+.font_weight
+{
+    font-weight: bold;
+}
+
+.fondo_326299 {
+    background-color:#326299;
+}
+
+.fondo_c8e6f7 {
+    background-color:#c8e6f7;
+}
+
+.fondo_white {
+    background-color:white;
+}
+
+.mi-panel .panel-body {
+
+    padding-bottom: 10px;
+    margin: 0 15px;
+    
+}
+
+.text_align_center
+{
+    text-align: center;
+}
+
+#foto-estudiante,#qr-estudiante
+{
+    margin-bottom: 4px;
+}
+
+#foto-estudiante
+{
+    height: 200px; width: 175px; border-radius: 8px;border: #326299 2px solid;
+}
+
+#qr-estudiante
+{
+    height: 175px; width: 175px;
+}
+
+.padding_right_10px
+{
+    padding-right: 10px;
+}
+
+.padding_16px_15px
+{
+    padding: 16px 15px;
+}
+
+.padding_5px_15px
+{
+    padding: 5px 15px;
+}
+
+.padding_25px_15px
+{
+    padding: 25px 15px;
+}
+
+.padding_10px
+{
+    padding: 10px;
+}
+
+.padding_16_2px
+{
+    padding: 16.2px;
+}
+
+.padding_top_0
+{
+    padding-top: 0 !important;
+}
+
+label
+{
+    font-family: calibri;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.mi-panel label
+{
+    font-weight: unset;
+}
+
+.display_flex_center
+{
+    display: flex;align-items: center;
+}
+
+.border_bottom_1px
+{
+    border-bottom: 1px solid #326299;
+}
+
+.border_right_1px
+{
+    border-right: 1px solid #326299;
+}
+
+.border_left_1px
+{
+    border-left: 1px solid #326299;
+}
+
+.margin_15px
+{
+    margin: 15px !important;
+}
+
+.texto
+{
+    font-size: 13px !important;
+    font-family: calibri;
+}
+

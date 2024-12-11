@@ -1,0 +1,290 @@
+body {
+    font-family: "Roboto";
+    /* background-image: url("../../assets/img/fondo-login.png");
+    background-size:100% 100%; */
+    position: relative;
+    margin: 0;
+}
+
+@keyframes aparecer {
+    from {
+      opacity: 0; /* La imagen está inicialmente invisible */
+    }
+    to {
+      opacity: 1; /* La imagen se hace completamente visible */
+    }
+  }
+  
+  .contenedor-formulario .wrap {
+    animation: aparecer 4s ease; /* Se especifica la animación y su duración */
+  }
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+.wrap {
+    width: 150%;
+    max-width: 800px;
+    height: 100%;
+    padding: 80px 70px 80px 10px;
+    margin: auto;
+    background: #ffffffab;
+    box-shadow: 5px 5px 153px #ececec;
+    border-radius: 15px;
+    /* transition: 5s opacity(.5); */
+}
+
+.frm-img {    
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.frm-img img{
+    width: 90%;
+    max-width: 120px;
+}
+
+.mi-panel label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.frm-titulo {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    background-color: #0d6aad;
+    color: white;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 18px;
+}
+
+.frm-subtitulo {
+    font-size: 17px !important;
+    margin-bottom: 25px;
+    color: #0d6aad;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    padding: 50px 10px; 
+    height: auto; 
+    margin: 0; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(20%);
+}
+
+.contenedor-formulario .formulario {
+    width: 100%;
+    margin: auto; 
+}
+
+.contenedor-formulario .formulario .input-group {
+    position: relative;
+    margin-bottom: 35px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: table;
+}
+
+
+.contenedor-formulario .formulario .input-group input[type="text"],
+.contenedor-formulario .formulario .input-group input[type="password"] {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #303F9F;
+    outline: none;
+    padding: 5px;    
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #8BaEcB;
+    height: 39px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"]:focus, 
+.contenedor-formulario .formulario .input-group input[type="text"]:active,
+.contenedor-formulario .formulario .input-group input[type="password"]:focus,
+.contenedor-formulario .formulario .input-group input[type="password"]:active {
+    outline: none;
+    border-bottom: 2px solid #2986e2;
+    background: transparent;
+}
+
+.contenedor-formulario .formulario .input-group label.label {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 16px;
+    position: unset;
+    top: 27px;
+    left: 0; 
+    color: #337ab7eb;
+    font-family: sans-serif;
+}
+
+.contenedor-formulario .formulario input[type="button"] {
+    background: #1976D2;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;    
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 14px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+    margin-top: 20px;    
+}
+
+.contenedor-formulario .formulario input[type="button"]:hover
+{
+    background: #1D4064;
+    color: #fff;
+}
+/*
+.contenedor-formulario .formulario .input-group input[type="text"]:hover,
+.contenedor-formulario .formulario .input-group input[type="password"]:hover {
+    background: #ececec;
+}
+*/
+#error {
+    color: #e30742;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+div#forgot {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+a {
+    color: #616668;
+}
+
+a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+/*
+Author: Deyvi Pajuelo
+Fecha: 23/09/2021
+
+Estilos para el formulario de recuperación de contraseña
+*/
+
+@font-face {
+    font-family: "Asap";
+    src: url("https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic");
+  }
+
+.input-data{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px; 
+    line-height: 210%;
+    width: 70%;
+    font-family: "Asap", Helvetica, sans-serif; font-size: 16px;
+}
+
+.input-data:focus{
+    border: none !important;
+    border-color: #e30742;
+}
+
+
+/*  Reset  */
+
+.body-reset{
+    /* background: #0D47A1; */
+}
+
+
+.restablecer{
+    font-family: "Asap", Helvetica, sans-serif;
+    font-size: calc(1em);
+    background-color: #f2f2f2;
+    height: 50vh;
+    width: 45vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.reset-tittle{
+    padding-top: 2rem;
+    /* width: auto; */
+    display: inline-block;
+    /* padding-right: 100px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/*PARA NAVIDAD EN SIGA*/
+body {
+    background-color: #34495e;
+    font-family: helvetica, arial, sans-serif;
+    /*padding-top: 210px;*/
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .wrapper {
+    position: unset;
+
+}
+
+@media screen and (max-width: 735px) {
+    .wrap {
+        width: 90%;
+        max-width: 357px;
+        padding: 29px 25px;
+        margin: auto;
+        background: #ffffffab;
+        /*box-shadow: 5px 5px 153px #ececec;*/
+        border-radius: 15px;
+    }
+    .contenedor-formulario {
+        height: auto; 
+        margin: 0; 
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-5%);
+    }
+  }

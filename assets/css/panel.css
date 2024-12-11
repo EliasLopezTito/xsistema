@@ -1,0 +1,70 @@
+/******** Panel ********/
+.mi-panel .panel-group .panel-primary {
+    border-color: #337ab7;
+}
+.mi-panel {
+    width: auto;    
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 100px;
+}
+.mi-panel .panel-heading {
+    padding-top: 7px;
+    padding-left: 15px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: #326299;
+}
+.mi-panel .panel-body {
+    padding-top: 15px;    
+    padding-bottom: 5px;        
+}
+.mi-panel label{
+    font-size: 12px;
+    font-weight: bold;    
+}
+.mipanel-input[type=text], .mipanel-combo, input[type=date], input[type=email], input[type=number], input[type=password] {    
+    height: 25px;    
+    font-size: 12px;
+}
+
+.mipanel-combo {
+    padding-top: 4px;
+}
+
+.mipanel-btn-img-texto{
+    border-radius: 5px;
+    margin-top: 0px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 25px;    
+    vertical-align: middle;
+    text-align: center;    
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.mipanel-btn-img-texto span{
+    font-size: 12px;    
+    padding-right: 5px;
+}
+
+.mipanel-row-fila{
+    height: 30px;
+    padding-top: 5px;
+}
+
+/******** Componentes ********/
+/*input[type=text], input[type=date], input[type=email], input[type=number], select.form-control{
+    padding: 0px 5px;
+    height: 30px;    
+    font-size: 12px;
+}*/
+

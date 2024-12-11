@@ -1,0 +1,230 @@
+#container-tramite
+{
+    /*margin-top: 20px;*/
+}
+
+.primera_col_subtitulo
+{
+    background-color: #d0e6ffe0;
+}
+
+.titulo_tabla
+{
+    background-color: #326299;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: unset;
+}
+
+.backgroundcolor_FFFF00
+{
+    background-color: #FFFF00;
+}
+
+.backgroundcolor_c5c7c3e8
+{
+    background-color:#c5c7c3e8;
+}
+
+.color_red
+{
+    color: red;
+}
+
+.color_white
+{
+    color: white;
+}
+
+.color_black
+{
+    color: black;
+}
+
+.backgroundcolor_ffb7ab
+{
+    background-color: #ffb7ab;
+}
+
+.backgroundcolor_b9ff95
+{
+    background-color: #b9ff95;
+}
+
+.backgroundcolor_17a2b8_important
+{
+    background-color: #17a2b8!important;
+}
+
+.backgroundcolor_black_important
+{
+    background-color: black!important;
+}
+
+.backgroundcolor_white_important
+{
+    background-color: white!important;
+}
+
+.backgroundcolor_343a40_important {
+    background-color: #343a40!important;
+}
+
+.padding_left_15
+{
+    padding-left: 15px;
+}
+
+.fontweight_bold
+{
+    font-weight: bold;
+}
+
+.fontweight_500
+{
+    font-weight: 500;
+}
+
+table.mi-tabla tbody tr td 
+{
+    padding: 3px 3px 3px 11px;
+}
+
+.txt_area
+{
+    text-transform: uppercase;
+}
+
+.font-weight-bold
+{
+    font-weight: bold;
+}
+
+.span-estrella
+{
+    color: orange;
+    font-size: medium;
+}
+
+.margin_top_10px
+{
+    margin-top: 10px;
+}
+
+.margin_top_12px
+{
+    margin-top: 12px;
+}
+
+.text-decoration_underline:hover
+{
+    text-decoration: underline;
+}
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    /*width: 40px;*/
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+/*Botón de despliegue de c/mensaje chat*/
+button.btn.btndropdown-opciones-chat-alumno:hover, button.btn.btndropdown-opciones-chat-alumno:focus  {
+    background-color: #17a2b8 !important;
+    color: white;
+}
+
+button.btn.btndropdown-opciones-chat-ial:hover, button.btn.btndropdown-opciones-chat-ial:focus {
+    background-color: #343a40 !important;
+    color: white;
+    
+}
+
+button.btn.dropdown-toggle.btndropdown-opciones-chat-alumno:focus, button.btn.dropdown-toggle.btndropdown-opciones-chat-ial:focus {
+    box-shadow: none;
+}
+
+.icono-alumno:hover, .icono-ial:hover
+{
+    color: #f1f1f1 !important;
+}
+
+/*cajita de opciones*/
+.dropdown-menu.opciones-chat.backgroundcolor_white_important:hover {
+    background-color: #f1f1f1 !important;
+}
+
+/*opcion de chat*/
+.opcion-chat:hover
+{
+    color:black;
+}
+
+.margin-bottom-cero
+{
+    margin-bottom: 0;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.text-align-right
+{
+    text-align: right;
+}
+
+.font-size-smaller
+{
+    font-size: smaller;
+
+}
+
+#cuerpo-chat
+{
+    overflow-y: auto;
+    max-height: 550px;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+table.mi-tabla thead tr{
+    background-color: #326299;
+    color: #ffffff;    
+    font-size: 13px;    
+}
+table.mi-tabla thead tr th{
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: normal;
+}
+table.mi-tabla tbody tr td{
+    font-family: calibri;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 3px;
+}
+table.mi-tabla tbody tr:hover{
+    /**background-color: #d9edf7;**/
+    cursor: pointer;
+}  
+table.mi-tabla tfoot tr td label{
+    margin-right: 5px;
+}
+.boton-tabla{
+    padding-top: 1px; 
+    padding-left: 3px;
+    background-color: #fff; 
+    border-style: solid;
+    border-width: 1px;
+    height:22px; 
+    width: 22px;    
+    margin-right: 3px;    
+}

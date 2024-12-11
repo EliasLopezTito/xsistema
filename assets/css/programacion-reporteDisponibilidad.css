@@ -1,0 +1,21 @@
+.fuente{
+    font-size: 11px;
+}
+
+.no-disponible{
+    background-color: #dcdcdc;
+}
+
+.disponible{
+    background-color: #8edcb9;
+}
+
+.padding-3{
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.label-radio{
+    font-weight: normal;
+    padding-right: 3px;
+}

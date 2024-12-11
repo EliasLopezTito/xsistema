@@ -1,0 +1,598 @@
+/*
+@font-face{
+    font-family: Flexo-Heavy;
+    src: url(assets/fonts/Flexo-Heavy.otf);
+}
+
+@font-face{
+    font-family: Flexo-Regular;
+    src: url(assets/fonts/Flexo-Regular.otf);
+}
+*/
+
+.btn_excel_datatable{
+    border-radius: 5px;
+    background: #00a65a !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: white !important;
+    border-radius: 5px !important;
+    margin-left: 20px !important;
+    padding: 5px !important;
+}
+
+/*** Otros ajustes ***/
+.main-footer {
+    font-size: 13px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    background-color: #d6dfe3;
+    color: #444444;
+}
+.main-footer > strong > a {
+    color:#1d4064;
+}
+.content {
+    padding: 7px;
+}
+/*** Fin Otros ajustes ***/
+
+/*** Panel ***/
+.mi-panel .panel-group .panel-primary {
+    border-color: #337ab7;
+}
+.mi-panel {
+    width: auto;    
+    margin: auto;
+    min-width: 100px;
+}
+.mi-panel .panel-heading {
+    padding-top: 7px;
+    padding-left: 15px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 0px;
+    background-color: #326299;
+}
+.mi-panel .panel-body {
+    padding-top: 10px;    
+    padding-bottom: 5px;        
+}
+.mi-panel label{
+    font-size: 12px;
+    font-weight: bold;    
+}
+.mipanel-combo, input[type=date], input[type=email], input[type=number], input[type=text], input[type=password] {    
+    height: 25px;    
+    font-size: 12px;
+}
+
+input[type=date].mipanel-date {
+    padding-top: 0px;
+    line-height: 23px;
+}
+
+.mipanel-combo {
+    padding-top: 4px;
+}
+
+.mipanel-btn-img-texto{
+    border-radius: 5px;
+    margin-top: 0px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 25px;    
+    vertical-align: middle;
+    text-align: center;    
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.mipanel-btn-img-texto span{
+    font-size: 12px;    
+    padding-right: 5px;
+}
+
+.mipanel-row-fila{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mimodal-row-fila {
+    padding-bottom: 6px;
+}
+/*** Fin Panel ***/
+
+.texto-azul {
+    color: #0000ff;
+}
+.texto-rojo {
+    color: #ff0000;
+}
+.texto-verde {
+    color: #00a157;
+}
+
+
+/*** Tabla ***/
+table.mi-tabla thead tr{
+    background-color: #326299;
+    color: #ffffff;    
+    font-size: 13px;    
+}
+table.mi-tabla thead tr th{
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: normal;
+}
+table.mi-tabla tbody tr td{
+    font-family: calibri;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 3px;
+}
+table.mi-tabla tbody tr:hover{
+    /**background-color: #d9edf7;**/
+    cursor: pointer;
+}  
+table.mi-tabla tfoot tr td label{
+    margin-right: 5px;
+}
+
+/*** Tabla ***/
+table.mi-tabla-2 thead tr{
+    background-color: #326299;
+    color: #ffffff;    
+    font-size: 13px;    
+}
+table.mi-tabla-2 thead tr th{
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: normal;
+}
+table.mi-tabla-2 tbody tr td{
+    font-family: calibri;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 8px;
+}
+table.mi-tabla-2 tbody tr:hover{
+    background-color: #d9edf7;
+    cursor: pointer;
+}  
+table.mi-tabla-2 tfoot tr td label{
+    margin-right: 5px;
+}
+
+/*** Fin Tabla ***/
+
+/*** Tabla sin hover  ***/
+
+table.mi-tabla-sh thead tr{
+    background-color: #326299;
+    color: #ffffff;    
+    font-size: 13px;
+}
+table.mi-tabla-sh thead tr th{
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: normal;
+}
+table.mi-tabla-sh tbody tr td{
+    font-family: calibri;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 8px;
+}
+table.mi-tabla-sh tbody tr:hover{
+    cursor: pointer;
+}
+table.mi-tabla-sh tfoot tr td label{
+    margin-right: 5px;
+}
+
+/*** Fin sin hover  ***/
+
+
+/*** Alineacion ***/
+.celda-centrada{
+    text-align: center;
+}
+.celda-derecha{
+    text-align: right;
+}
+.celda-izquierda{
+    text-align: left;
+}
+/*** Fin Alineacion ***/
+
+
+/*** Botones ***/
+.boton-rojo, .boton-rojo:focus{
+    color: #d14; 
+    border-color: #d14;
+}
+.boton-rojo:hover{
+    background-color: #d14; 
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-naranja, .boton-naranja:focus{
+    color: #E67E22;
+    border-color: #E67E22;
+}
+.boton-naranja:hover{
+    background-color: #E67E22; 
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-plomo, .boton-plomo:hover{
+    color: #444;
+    border-color: #444;
+}
+.boton-plomo:hover{
+    background-color: #444;
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-verde, .boton-verde:focus{
+    color: #008d4c;
+    border-color: #008d4c;
+}
+.boton-verde:hover{
+    background-color: #008d4c;
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-azul, .boton-azul:focus{
+    color: #1d4064;
+    border-color: #1d4064;
+}
+.boton-azul:hover{
+    background-color: #1d4064;
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-amarillo, .boton-amarillo:focus{
+    color: #b7ca0f;
+    border-color: #b7ca0f;
+}
+.boton-amarillo:hover{
+    background-color: #b7ca0f;
+    color: #fff; 
+    border-color: #fff;     
+}
+.boton-celeste, .boton-celeste:focus{
+    color: #1dc7de;
+    border-color: #1dc7de;
+}
+.boton-celeste:hover{
+    background-color: #1dc7de;
+    color: #fff; 
+    border-color: #fff;     
+}
+
+.boton-tabla {
+    width: 22px;
+    height: 22px;
+    padding-top: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+}
+.boton-tabla > span {
+    font-size: 15px;
+}
+/*** Fin Botones ***/
+
+/*** Mensaje ***/
+.modal-header {
+    color: #ffffff; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+.modal-footer {
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+.modal-title {
+    padding-left: 5px;
+    font-size: 14px;
+}
+#mensaje-boton, #mensaje-boton-aceptar, #mensaje-boton:hover, #mensaje-boton-aceptar:hover {
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 12px;
+}
+#mensaje-icono {
+    font-size: 14px;
+}
+/*** Fin Mensaje ***/
+
+/*** Modal Busqueda ***/
+.modal-header-busqueda {
+    background-color: #326299;
+    color: #ffffff;
+}
+.scrollVertical{
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.modal-error-busqueda {
+    display: none; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-left: 30px; 
+    color: #e30742; 
+    background-color: #fafafa;
+}
+.modal-body-busqueda {
+    padding-bottom: 5px;
+}
+/*** Fin Modal Busqueda ***/
+
+.tr-seleccionado {
+    background-color: #00c0ef;
+}
+
+/*
+    Author: Deyvi Pajuelo
+    Fecha: 15/12/2021
+*/
+/* Estilos Loader */
+
+#preloader{
+    position: fixed;
+    background-color: rgba(33, 33, 33, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#preloader #preloader-inner{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 45%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    animation: spin 1.5s linear infinite
+}
+
+#preloader #preloader-inner:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    animation: spin 2.5s linear infinite
+}
+.text-loader{
+    z-index: 1000;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #f5f5f5;
+    top: 48%;
+    font-size: 1.6rem;
+}
+#preloader #preloader-inner:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    animation: spin 1s linear infinite
+}
+
+@keyframes 
+spin { 0% {
+    transform:rotate(0deg)
+    }
+
+    to { transform: rotate(1turn) }
+}
+
+/* Fin Loader */
+
+
+/* Autocomplete */
+
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 5px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* Fin Autocomplete */
+.spider {
+    position: absolute;
+    top: 0;
+    left: 97.5%;
+    z-index: 1002;
+    animation: animateSpider 15s ease-in-out infinite;
+}
+
+@keyframes animateSpider {
+
+    0%,
+    100% {
+        transform: translateY(-500px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+.pumpkin01 {
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    z-index: 1000;
+    animation: animatePumpkin 8s ease-in-out infinite;
+}
+
+@keyframes animatePumpkin {
+
+    0%,
+    100% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+#text-halloween {
+    font-family: 'Fruktur', cursive;
+    position: relative;
+    font-size: 28px;
+    font-weight: 590;
+    color: #0e3742;
+    text-shadow: none;
+    animation: animate 5s infinite linear;
+}
+
+/* #text-navidad {
+    font-family: 'Lobster', cursive;
+    position: relative;
+    font-size: 28px;
+    font-weight: lighter;
+     display: flex;
+    color: #050505;
+    text-shadow: none;
+    animation: animate 5s infinite linear;
+} */
+
+@keyframes animate {
+
+    0%,
+    18%,
+    90.1%,
+    90% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+    18.1%,
+    90%,
+    92.1%,
+    98% {
+        color: #fdfdfd;
+        text-shadow: 0 0 10px #01bf2b,
+            0 0 20px #f04554,
+            0 0 40px #eff9fb,
+            0 0 80px #f04554,
+            0 0 160px #01bf2b;
+    }
+}
+
+@keyframes animateHallowen {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffac09;
+        text-shadow: 0 0 10px #ffac09,
+            0 0 20px #ffac09,
+            0 0 40px #ffac09,
+            0 0 80px #ffac09,
+            0 0 160px #ffac09;
+    }
+}
+
+/* Arbol navidad */
+
+.br {
+    margin-bottom: -15px !important;
+}
+.estrella {
+    font-size: 15px;
+    animation: colores 1s infinite;
+}
+
+.rojo {
+    color: red;
+    transition: all 1.5s;
+    font-size: 15px;
+}
+
+@keyframes colores {
+    0% {
+        color: red;
+    }
+
+    33% {
+        color: green;
+    }
+
+    66% {
+        color: red;
+    }
+
+    100% {
+        color: yellow;
+    }
+}

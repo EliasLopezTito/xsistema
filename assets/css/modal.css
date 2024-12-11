@@ -1,0 +1,22 @@
+.modal-header{
+    background-color: #337ab7;
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 8px;    
+}
+.modal-header label{
+    font-size: 13px;    
+}
+.modal-header button span{
+    font-size: 25px;
+    color: #fff;
+}
+.modal-content {
+    /*height: 550px; */
+    vertical-align: middle;
+}
+.scrollVertical{
+    overflow-y: auto;
+    /*height: 320px;*/    
+}

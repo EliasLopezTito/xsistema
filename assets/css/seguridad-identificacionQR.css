@@ -1,0 +1,30 @@
+#foto-estudiante
+{
+    margin-bottom: 4px;
+}
+
+#foto-estudiante
+{
+    height: 250px; width: 225px; border-radius: 8px;border: #326299 2px solid;
+}
+
+.padding_16px_15px
+{
+    padding: 16px 15px;
+}
+
+.text_align_center
+{
+    text-align: center;
+}
+
+.texto
+{
+    font-size: 42px !important;
+    font-family: calibri;
+}
+
+.mi-panel label
+{
+    font-weight: unset;
+}

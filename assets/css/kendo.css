@@ -1,0 +1,509 @@
+.customer-photo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-size: 32px 35px;
+    background-position: center center;
+    vertical-align: middle;
+    line-height: 32px;
+    /*box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0, 0, 0, .2);*/
+}
+
+.customer-name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    padding-left: 3px;
+}
+
+.table-cell {
+    min-width: 150px;
+}
+
+.leyenda {
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+    max-width: 300px;
+    border: 1px solid rgb(238, 237, 237);
+    border-radius: 26px;
+    position: relative;
+    margin-right: 10px;
+    font-weight: 100;
+    display: flex;
+    height: 26px;
+}
+
+.leyenda p {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 5px;
+}
+
+.modal .leyenda p {
+    margin-top: -15px;
+}
+
+.leyenda .red {
+    background-color: red;
+    box-shadow: 0 0 4px #c70011;
+}
+
+.leyenda .yellow {
+    background-color: yellow;
+    box-shadow: 0 0 4px rgb(228, 141, 11);
+
+}
+
+.leyenda .green {
+    background-color: rgb(2, 201, 2);
+    box-shadow: 0 0 4px #009619;
+}
+
+.leyenda .green::before,
+.leyenda .red::before,
+.leyenda .yellow::before {
+    background-color: transparent !important;
+    box-shadow: transparent !important;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.leyenda span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+.leyenda .toolBar {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    margin-top: -4px;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+
+.k-editor-toolbar, .k-toolbar {
+    background-color: #ebebeb
+}
+
+
+.leyenda .toolBar span {
+    text-align: center;
+    height: 22px;
+    width: 22px;
+    padding-top: 4px;
+}
+
+.leyenda .toolBar a {
+    color: #313131 !important;
+
+}
+
+.leyenda .toolBar a:hover {
+    color: #fff !important;
+
+}
+
+.leyenda label {
+    margin-right: 10px;
+    margin-left: -2px;
+}
+
+.k-grid .k-grid-search {
+    width: 180px;
+    float: right;
+    margin-right: 250px;
+    margin-top: -48px;
+
+}
+
+.k-grid-toolbar {
+    padding: 0;
+    height: 0;
+    border: 0;
+}
+
+.k-input,
+.k-textbox>input {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.input-buscar input {
+    border: 0;
+    background-color: transparent;
+    border: 1px solid #818181;
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+
+.k-toolbar {
+    padding: 2px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.k-toolbar:hover {
+    background-color: #ccc;
+}
+
+.icon-in-table {
+    transition: .5s;
+    font-size: 24px;
+    opacity: .8;
+}
+
+.k-pager-wrap.k-pager-lg,
+.k-pager-wrap.k-pager-md,
+.k-pager-wrap.k-pager-sm {
+    padding: 0;
+}
+
+.k-grid-header .k-header>.k-link {
+    margin: -8px -12px;
+    padding: 8px 12px;
+    margin: -8px 0px;
+    padding: 8px 2px;
+}
+
+.k-tooltip {
+    background: rgb(73, 1, 1);
+}
+.k-callout{
+    color: rgb(73, 1, 1);
+}
+.kendo-toolstip{
+    text-align: center;
+    
+}
+
+
+
+
+
+/*---------------- FILTER FORM ------------*/
+.k-action-buttons .k-button {
+    padding: 8px 4px;
+}
+
+::-webkit-search-cancel-button {
+    position: relative;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/OOjs_UI_icon_close.svg);
+    background-size: 14px;
+    background-position: center;
+    bottom: 1px;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------
+EXPORT TO PDF
+-----------------------------------------*/
+
+.header .leyenda {
+    position: absolute;
+    right: 0;
+    border: 0;
+    margin: 0;
+    text-align: right;
+    float: right;
+}
+
+.header .pdf-icon-group {
+    position: absolute;
+    margin: 0;
+    top: 0.6cm;
+    display: flex;
+    right: -0.5cm;
+
+}
+
+.header .pdf-state-group {
+    top: 2cm;
+    right: -0.1cm;
+}
+
+.header .pdf-icon-group label {
+    line-height: 20px;
+}
+
+.header .leyenda p {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 0;
+}
+
+.company-logo {
+    font-size: 32px;
+    width: 100%;
+    display: flex;
+    bottom: 0px;
+    position: absolute;
+}
+
+.company-logo span {
+    margin: 3px;
+}
+
+.logo {
+    font-size: 65px;
+    width: 100%;
+}
+
+.link-grosio {
+    color: red;
+    font-size: 25px;
+    font-family: 'houy';
+    margin-top: -20px;
+    width: 50%;
+    left: 0;
+    text-align: left;
+    margin-left: 0;
+}
+
+.logo-ggrosio {
+    width: 50%;
+    right: 0;
+    margin-right: 0;
+    text-align: right;
+}
+
+.page-template {
+    /*font-family: "DejaVu Sans", "Arial", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+.page-template h3 {
+    text-align: center !important;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.page-template .header {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    color: #888;
+    display: block;
+}
+
+.page-template .footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    color: #888;
+}
+
+.page-template .watermark {
+    font-weight: bold;
+    font-size: 400%;
+    text-align: center;
+    margin-top: 30%;
+    color: #dddddd;
+    opacity: 0.1;
+    transform: rotate(-35deg) scale(1.7, 1.5);
+}
+
+.watermark {
+    text-align: center;
+    top: 250px;
+    /*Terror beltran */
+}
+
+
+
+.kendo-pdf-document .customer-photo {
+    border: 1px solid #dedede;
+}
+
+
+
+.k-pdf-export .k-grid .k-grid-filter,
+.k-grid .k-header-column-menu,
+.k-grid .k-hierarchy-cell .k-icon {
+    color: #fff;
+}
+
+.k-pdf-export .k-grid-header .k-grid-filter.k-state-active,
+.k-grid-header .k-header-column-menu.k-state-active,
+.k-grid-header .k-hierarchy-cell .k-icon.k-state-active {
+    color: #bebdbd;
+}
+
+.k-grid-header .k-grid-filter,
+.k-grid-header .k-header-column-menu {
+    width: calc(1px + 1.42857143em);
+}
+
+.k-grid-header .k-i-sort-asc-sm,
+.k-grid-header .k-i-sort-desc-sm,
+.k-grid-header .k-sort-order {
+    font-size: 0;
+}
+
+.k-grid-header .k-filterable,
+.k-grid-header .k-with-icon {
+    padding-right: calc(0px + 1.42857143em);
+}
+
+.k-grid-header .k-grid-filter,
+.k-grid-header .k-header-column-menu {
+    height: calc(12px + 1.42857143em);
+}
+
+/*
+.k-pdf-export .k-grid-content.k-auto-scrollable {
+    position: static;
+    height: 740px;
+}
+*/
+
+
+
+.k-grid-content.k-auto-scrollable {
+    max-height: calc(100vh - 330px);
+    overflow: auto;
+
+}
+
+.k-pdf-export .k-grid-content.k-auto-scrollable {
+    position: static;
+   /* height: 500px!important;*/
+
+}
+
+.k-grid td{
+    border-bottom: 1px solid #f4f4f4!important;
+    padding-top: 2px!important;
+    padding-bottom: 2px!important;
+
+}
+
+/*
+.k-grid-content.k-auto-scrollable {
+    position: static;
+    height: 480px;
+    height: auto;
+}*/
+
+/*
+@media only screen and (max-width: 1024px) {
+    .k-grid-content.k-auto-scrollable {
+        position: static;
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .k-grid-content.k-auto-scrollable {
+        position: static;
+        height: 740px;
+    }
+}*/
+
+
+
+@media only screen and (max-width: 1024px) {
+.k-grid-content.k-auto-scrollable {
+    height: 100vh;
+    max-height: calc(100vh - 310px);
+}
+}
+@media only screen and (max-width: 768px) {
+.k-grid-content.k-auto-scrollable {
+    max-height: calc(100vh - 360px);
+}
+}
+
+
+/*-----------------------------------------*/
+
+.k-grid-header {
+    background: #326299!important;
+    color: #fff!important;
+    border-radius: 0!important;
+    text-align: center!important;
+
+}
+
+
+.k-grid {
+    margin: 0 15px ;
+    color: #000!important;
+    font-size: 12px!important;
+}
+
+.k-grid th{
+    padding: 5px!important;
+    border-left: 1px solid #fff!important;
+    border-bottom: 0!important;
+}
+
+.k-header{
+    text-align: center!important;
+ }
+
+ .k-grid tbody tr.k-state-hover, .k-grid tbody tr:hover{
+     background: #d9edf7!important;
+ }
+ .k-grid-footer{
+     background: red!important;
+ }
+
+ .k-grid-header .k-grid-filter:hover{
+     background: transparent!important;
+     color: white!important;
+ }
+
+
+
+ :focus {
+    outline: none!important;
+    box-shadow: none!important;
+  }
+
+
+  .k-toolbar{
+      background-color: transparent!important;
+      display: initial!important;
+      padding: 0!important;
+      margin: 0!important;
+      color: #000 !important;
+      border: 0!important;
+      position: inherit!important;
+  }
+
+  /*========================== ALERT ==================*/
+
+  
