@@ -31,8 +31,7 @@ class Model_Auth extends CI_Model{
     public function selectMenu($usuario, $nivel) {
         $parametros = array();        
         $query = "  select me.id_menu, me.descripcion, me.icono, me.href, me.nivel, me.padre
-                    from menus me
-                    where me.nivel = '".$nivel."' ";
+                    from menus me where me.nivel = '".$nivel."' ";
         
         // $parametros[] = $usuario;
         // $parametros[] = (int) $nivel;

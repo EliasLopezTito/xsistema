@@ -42,38 +42,7 @@
                         </div>
 
                         <?php
-
-                        // $nivel11 = new stdClass();
-                        // $nivel11->id_menu = "1";
-                        // $nivel11->descripcion = "Libreta";
-                        // $nivel11->icono = "icon-cog";
-                        // $nivel11->href = "#";
-                        // $nivel11->nivel = "1";
-                        // $nivel11->padre = "0";
-                        // $nivel11->orden = "1";
-
-                        // $nivel22 = new stdClass();
-                        // $nivel22->id_menu = "2";
-                        // $nivel22->descripcion = "Estructura";
-                        // $nivel22->icono = "icon";
-                        // $nivel22->href = "#";
-                        // $nivel22->nivel = "2";
-                        // $nivel22->padre = "1";
-                        // $nivel22->orden = "2";
-
-                        // $nivel33 = new stdClass();
-                        // $nivel33->id_menu = "3";
-                        // $nivel33->descripcion = "Contacto";
-                        // $nivel33->icono = "icon-contacto";
-                        // $nivel33->href = "#";
-                        // $nivel33->nivel = "3";
-                        // $nivel33->padre = "2";
-                        // $nivel33->orden = "1";
-
-                        // $nivel1 = $nivel11;
-                        // $nivel2 = $nivel22;
-                        // $nivel3 = $nivel33;
-                        // echo"<pre>";print_r($nivel1);echo"</pre>";
+                        //echo"<pre>";print_r($nivel1);echo"</pre>";
 
                             if ($nivel1 != null && $nivel1 != "vacio") {
                                 foreach ($nivel1 as $n1) {
@@ -114,7 +83,8 @@
 
                                     <div data-kt-menu-trigger="click" class="<?= $class ?> <?= (isset($active1) ? $active1 : '') ?>">
                                         <span class="menu-link">
-                                            <span class="menu-icon"><i class="<?= $n1->icono ?>" style="margin-right: 5px;"></i></span>
+                                            <!-- <span class="menu-icon"><i class="<?= $n1->icono ?>" style="margin-right: 5px;"></i></span> -->
+                                             <span class="menu-icon"><img src="assets/icons/<?= $n1->icono ?>" alt=""></span>
                                             <span class="menu-title"><?= $n1->descripcion ?>
                                             </span><span class="menu-arrow"></span>
                                         </span>

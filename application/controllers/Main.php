@@ -25,22 +25,6 @@ class Main extends CI_Controller {
             $search = $this->input->get('term');
             
             switch ($opcion) {
-                case 'cumpleDiaHoy':                   
-                    $datax = $this->Model_Seguridad->cargarPersonaCumple();
-
-                    if ($datax != null) {
-                        $data->respuesta = "success";
-                        if($datax == "vacio"){
-                            $data->data = "vacio";
-                        }else{
-                            $data->data = "lleno";
-                        }
-                    } else {
-                        $data->respuesta = "error";
-                        $data->errores[] = $this->Model_Seguridad->getError();
-                    }
-
-                    break;
                 case 'cargarEncuestasAlumnos':
 
                     date_default_timezone_set('America/Lima');    
@@ -58,30 +42,9 @@ class Main extends CI_Controller {
                             if($encuestas[0]->Estado == "1"){
                             
                                 $err = false;
-                                //foreach ($encuestas as $key => $encuesta) {
                                     
                                     $preguntas = $this->Model_Seguridad->selectEncuestasPreguntasAlternativasAlumnos($encuestas[0]->Op);
                                     
-                                    // print_r($preguntas);
-                                    // return;
-                                    // if ($preguntas != null) {
-
-                                    //     if($preguntas != "vacio"){
-                                            
-                                    //         $encuesta->Alumno = "asdasd";
-
-                                    //     }else{
-
-                                    //         $data->respuesta = "vacio";                                     
-                                    //         $err = true;
-                                    //         break;
-
-                                    //     }
-                                    
-                                    // }
-
-                                //}
-
                                 if($err == true){
                                     break;
                                 }
@@ -101,71 +64,6 @@ class Main extends CI_Controller {
                     } 
 
                     break;
-
-                case "registrar" :
-
-                    $idEncuesta = $this->input->post("idEncuesta");
-                    $idPreguntas = $this->input->post("idPreguntas");
-                    $usuario = $this->session->userdata("usuario");
-                    $sede = $this->input->post("sede");
-
-                    $guardarRespuesta = array();
-                    
-                    $error = false;
-                    foreach ($idPreguntas as $key => $idPregunta) {
-                        
-                        $respuesta = trim($this->input->post("respuesta".($key+1)));
-                        $respuestaOpcional = trim($this->input->post("respuestaOpcional".($key+1)));
-                        /**if($respuesta == ""){
-                            $error = true;
-                            break;
-                        }**/
-
-                        $guardarRespuesta[] = array($idEncuesta,$idPregunta,$usuario,$respuesta, $respuestaOpcional);
-
-                    }
-
-                    /**if($error == true){
-
-                        $data->respuesta = "warning";
-                        $data->error = "Por favor responda todas las preguntas";
-                        break;
-
-                    }**/
-
-                    $registro = $this->Model_Seguridad->registrarRespuestasEncuestasAlumnos($guardarRespuesta, $sede);
-
-                    if ($registro != null) {
-                        
-                        // date_default_timezone_set('America/Lima');    
-                        // $hoy = date('Y-m-d');                    
-                        // $cantidadEncuestas = $this->Model_Seguridad->selectEncuestasActivas($hoy,$codigoAlumno);                    
-                        // if ($cantidadEncuestas != null) {
-
-                        //     $cantidadRestante =  0;
-                        //     if($cantidadEncuestas != "vacio"){
-                        //         $cantidadRestante = count($cantidadEncuestas);
-                        //     }
-
-                            $data->respuesta = "success";
-                            //$data->cantidadRestante = $cantidadRestante;
-
-                        // }else{
-
-                        //     $data->respuesta = "error";
-                        //     $data->error = $this->Model_Seguridad->getError();
-
-                        // }
-
-                    }else{
-
-                        $data->respuesta = "error";
-                        $data->error = $this->Model_Seguridad->getError();
-
-                    }
-
-                    break;
-
                 default:
                     # code...
                     break;
@@ -185,9 +83,9 @@ class Main extends CI_Controller {
         // $data->sedes = $this->Model_Seguridad->selectSedes();
         $data->contenido = "main/index";
         $data->blanco = false;
-        $data->nivel1 = $this->Model_Auth->selectPrueba('user', '1');
-        $data->nivel2 = $this->Model_Auth->selectPrueba('user', '2');
-        $data->nivel3 = $this->Model_Auth->selectPrueba('user', '3');
+        $data->nivel1 = $this->Model_Auth->selectMenu('user', '1');
+        $data->nivel2 = $this->Model_Auth->selectMenu('user', '2');
+        $data->nivel3 = $this->Model_Auth->selectMenu('user', '3');
         //$data->csss = ["index.css"];
         /* $data->jss = ["index.js"]; */
         $this->load->view("plantilla/frontend", $data);
