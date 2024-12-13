@@ -1,12 +1,4 @@
 
-<!-- EFECTO NIEVE - PARA TEMPORADA NAVIDEÑA -->
-<!-- <div id="snowflakes-container" style="width: 100vw;height: 100vh;position: absolute;overflow: hidden;top: 0;z-index:-1"></div> -->
-
-<!-- EFECTO NIEVE - PARA TEMPORADA NAVIDEÑA - END -->
-
-    
-    <!-- <img src="<?php echo base_url('assets/img/pumpkin01.png'); ?>" width="100" height="100" class="pumpkin01">
-    <img src="<?php echo base_url('assets/img/spider.png'); ?>"  width="100" class="spider">  -->
 
 <?php 
     if($blanco == false){
@@ -16,17 +8,17 @@
                 <div style="position: absolute; background: linear-gradient(90deg, rgb(20%, 40%, 60%), rgb(22, 83, 172)); width: 231px; height: 30px; left: -246px; bottom: -24px;"></div>
             </div>
             <div class="pull-right hidden-xs">
-                <b>Version</b> 2.5
+                <b>Version</b> 1
             </div>
-            Copyright &copy; 2024 <strong><a href="http://www.arzobispoloayza.edu.pe" target="_blank"> Instituto Arzobispo Loayza.</a></strong> Todos los derechos reservados.
+            Copyright &copy; 2024 <strong><a href="" target="_blank"> X SISTEMA.</a></strong> Todos los derechos reservados.
         </footer>
-        
     </div>
+</div>
 <?php        
     }
 ?>
-    <div id="snowflakes-container" style="width: 100vw;height: 100%;position: absolute;overflow: hidden;top: 0;z-index:-1;"></div>
-    
+        <!-- <script src="https://cdn.jsdelivr.net/npm/keen-ui@1.4.0/dist/keen-ui.min.js"></script> -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/keen-ui@1.4.0/dist/keen-ui.min.css" rel="stylesheet"> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>  
         <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>

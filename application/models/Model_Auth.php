@@ -27,6 +27,29 @@ class Model_Auth extends CI_Model{
         }
 
     }
+
+    public function selectMenu($usuario, $nivel) {
+        $parametros = array();        
+        $query = "  select me.id_menu, me.descripcion, me.icono, me.href, me.nivel, me.padre
+                    from menus me
+                    where me.nivel = '".$nivel."' ";
+        
+        // $parametros[] = $usuario;
+        // $parametros[] = (int) $nivel;
+        
+        $result = $this->db->query($query)
+            or $this->error = strftime("%d/%m/%Y  %H:%M:%S") . ' Model: Menu --- Metodo: selectNivel1 --- Error: ' . sqlsrv_errors()[0][2];
+
+        if (!isset($this->error)) {
+            if (count($result->result()) > 0) {
+                return $result->result();
+            } else {
+                return "vacio";
+            }
+        } else {
+            return null;
+        }
+    }
         
     public function selectLogin($usuario,$contrasenia){
         

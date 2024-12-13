@@ -185,6 +185,9 @@ class Main extends CI_Controller {
         // $data->sedes = $this->Model_Seguridad->selectSedes();
         $data->contenido = "main/index";
         $data->blanco = false;
+        $data->nivel1 = $this->Model_Auth->selectPrueba('user', '1');
+        $data->nivel2 = $this->Model_Auth->selectPrueba('user', '2');
+        $data->nivel3 = $this->Model_Auth->selectPrueba('user', '3');
         //$data->csss = ["index.css"];
         /* $data->jss = ["index.js"]; */
         $this->load->view("plantilla/frontend", $data);
