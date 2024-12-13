@@ -4,7 +4,7 @@
         <title>X | SISTEMA</title>        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-		<link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/img/logo.png'); ?>"> 
+		<!-- <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/img/logo.png'); ?>">  -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <meta name="description" content="X Sistema">
         <link href="<?php echo base_url('assets/plugins/global/plugins.bundle.css'); ?>" rel="stylesheet" type="text/css"/>

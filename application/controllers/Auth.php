@@ -8,7 +8,7 @@ class Auth extends CI_Controller {
         parent::__construct();
         $this->load->model("Model_Auth");
         $this->load->model("Model_Menu");
-        $this->load->model("Model_Programacion");
+        //$this->load->model("Model_Programacion");
         $this->errores = null;
     }
 

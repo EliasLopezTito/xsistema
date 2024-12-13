@@ -8,9 +8,9 @@ class Main extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        // if ($this->session->userdata("logueado") !== TRUE) {
-        //     redirect("Auth");
-        // }
+        if ($this->session->userdata("logueado") !== TRUE) {
+            redirect("Auth");
+        }
         $this->load->model("Model_Auth");
         $this->load->model("Model_Usuario");
         //$this->load->model("Model_Seguridad");
